@@ -179,7 +179,7 @@ input::placeholder{
     .main_flex_info_button{
         width: 200px;
     }
-    /* .main_flex_info {
-        padding: 25px 5px;
-    } */
+    .main_flex_info {
+        height: 520px;
+    }
 }
