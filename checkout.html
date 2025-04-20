@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./nulstyle.css">
+    <link rel="stylesheet" href="./checkout.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="icon" href="./image/favikon.png" type="image/x-icon">
+    <title>RAFTEL</title>
+</head>
+<body>
+    <section class="box">
+        <header>
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./image/logo.png" alt="">
+                </a>
+            </div>
+            <nav>
+                <a href="./index.html">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 4L8 12L16 20"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"/>
+                    </svg>
+                </a>           
+            </nav>
+            <a href="./index.html">
+                <p class="header_p">Повернутися до покупок</p>
+            </a>
+        </header>
+        <main class="main">
+            <h1 class="main_title">Оформлення замовлення</h1>
+            <section class="main_flex">
+                <div class="main_flex_info">
+                    <form>
+                        <input type="text" id="fullname" name="fullname" placeholder="ПІБ" required><br><br>
+                        <input type="number" id="phone" name="phone" placeholder="Телефон" pattern="^\+?[0-9\s\-]{7,15}$" required><br><br>
+                        <input type="text" id="city" name="city" placeholder="Місто" required><br><br>
+                        <input type="text" id="nova_pochta" name="nova_pochta" placeholder="Відділення Нової Пошти" required><br><br>
+                    </form>
+                    <p class="main_flex_info_text">Оберіть один із месенджерів в якому вам зручно щоб менеджер <br>підтвердив ваше замовлення</p>
+                    
+                    <button class="main_flex_info_button" id="send-viber-btn">Підтвердити Замовлення в Viber</button>
+                    <br>
+                    <button class="main_flex_info_button">Підтвердити Замовлення в Telegram</button>
+                </div>
+                <div class="main_flex_delivery">
+                    <div id="cart-items"></div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer_logo">
+                <img src="image/logo.png" alt="logo">
+                <p class="footer_logo_text">© 2022—2025</p>
+                <p class="footer_logo_text">RAFTEL. Всі права захищені</p>
+            </div>
+            <div class="footer_about">
+                <h1>Клієнтам</h1>
+                <a href="./About_us.html">Про нас</a>
+                <a href="./pay_delivery.html">Оплата та доставка</a>
+                <a href="./return.html">Обмін та повернення</a>
+                <a href="./User_Agreement.html">Угода користувача</a>
+            </div>
+            <div class="footer_contacts">
+                <h1>Контактна інформація</h1>
+                <nav class="footer_contacts_viber">
+                    <img src="image/viber.png" alt="">
+                    <a href="viber://chat?number=+380506853718"><p>0506853718</p></a>
+                </nav>
+                <a href=""><p class="footer_contacts_gmail">raftelstore.ua@gmail.com</p></a>
+                <p>Наші соцмережі</p>
+                <a href="">
+                    <img class="footer_contacts_facebook" src="image/facebook.png" alt="">
+                </a>
+            </div>
+            <div class="footer_maps">
+                <p>Київ, Україна</p>
+                <p>Графік роботи:</p>
+                <p>Будні: 10:00–20:00</p>
+                <p>СБ,НД: 10:00–18:00</p>
+            </div>
+        </footer>
+    </section>
+</body>
+<script src="./list_checkout.js"></script>
+<script src="./basket.js"></script>
+<script src="./checkout_viber.js"></script>
+</html>
